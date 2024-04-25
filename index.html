@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" type="text/css" href="style.css"></a>
+    <title>Proj-1 survey form</title>
+</head>
+<body>
+<h1> A SURVEY FORM </h1>  
+<form id="form">
+    <!--in class name there shouldn't be any spaces instead u can use hyphen*/-->
+    <div  class="form-ctrl" >
+    <label for="name" id="label_name">Name<sup>*</sup></label><br>
+<input type ="text" id="name" placeholder="Enter your name" required><br>
+        </div>
+    <div class="form-ctrl">
+<label for="email" id="label_email">Email<sup>*</sup></label><br>
+<input type="email" id="email" placeholder="Enter your email" required><br>
+        </div>
+        <div class="form-ctrl">
+<label for="age" id="label_age">Age</label><br>
+<input type="number" id="age" placeholder="Enter your age"><br>
+            </div>
+    <div class="form-ctrl">
+<label for="ddl" id="ddllist">Which option best describes u?</label><br>
+<select name="ddl sel" id="ddl">
+    <option>--select--</option>
+    <option>student</option>
+    <option>Graduate</option>
+    <option>In job</option>
+</select><br>
+    </div>
+    <div class="form-ctrl">
+<label>Would u recommend this to your friend?</label><br>
+<label for="recy" id="recfy"><input type="radio" id="recy" name="recommend">Yes</input></label>
+<label for="recn" id="recfn"><input type="radio" id="recn" name="recommend">No</input></label>
+<label for="recm" id="recfm"><input type="radio" id="recm" name="recommend">Maybe</input></label>
+    </div>
+      <div class="form-ctrl">
+          <label>Languages Known <small>(check all that apply)</small></label><br>
+          <label for="clan">
+<input type="checkbox" id="clan">C</input><br>
+          </label>
+           <label for="javalan">
+<input type="checkbox" id="javalan">Java</input><br>
+          </label>
+          <label for="pythlan">
+<input type="checkbox" id="pythlan">Python</input><br>
+         </label>
+          <label for="rublan">
+<input type="checkbox" id="rublan">Ruby</input> <br>
+         </label>
+           <label for="jslan">
+<input type="checkbox" id="jslan">Javascript</input><br>
+         </label>
+           <label for="sqllan">
+<input type="checkbox" id="sqllan">MySQL</input><br>
+          </label>
+           </div>
+          <div class="form-ctrl">
+<label>Any comments or sugg's?</label><br>
+<textarea id="texcom"></textarea><br>
+     </div>
+    <button type="submit" id="submit">SUBMIT</button>   
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/*styling body with background color,font-family,and aligning text*/
+ body
+{
+  background-color:#05C47C;
+  font-family:Lucida Console;
+  text-align:center;
+}
+/*styling header*/
+h1{
+   margin-top:50px;
+ }
+/* styling form set background color using hex,
+   max-width how much place that should be occupied by main content as box numinc. size inc. of box,
+   margin num in px will give space at top and bottom & auto will align left and right equally,
+   padding (1st)in px sets the top and bottom of the element & (2nd in px) sets R&L i.e.inside box,
+   box-shadow 2px right, 5px bottom , 10px blur radius and 0.5 is opacity*/ 
+form
+{
+  background-color:#fff;
+  max-width:500px;
+  margin:80px auto;
+  padding:50px 30px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+/*styling form-ctrl class,
+  text-align sets everything to left here,
+  margin bottom sets that much px space between each and every element */
+.form-ctrl
+{
+   text-align:left;
+   margin-bottom:15px;
+}
+/* styling label of form-ctrl class,
+   display as block occupies entire width*/
+.form-ctrl label 
+{                
+  display: block;
+  width:100%;
+  margin-bottom:5px;
+}
+/* styling form-ctrl input,select,text-area
+   border 1px(how big) solid #777(grey),
+   border radius for curved edges,
+   font family is getting inherited from body,
+   padding internal space in box*/
+.form-ctrl input,.form-ctrl select,.form-ctrl textarea
+{
+  border:1px solid #777;
+  border-radius:2px;
+  font-family:inherit;
+  padding:5px;
+  display:block;
+  width:95%;
+}
+/*styling form-ctrl input(radio,checkbox)
+  display:inline-block behaves like inline block and width will be determined by its content;
+  width:auto; label's width adjusts dynamically based on its content.
+  otherwise they will be arranged randomly in  middle*/
+.form-ctrl input[type="radio"],.form-ctrl input[type="checkbox"]
+{
+  display:inline-block;  
+  width:auto;
+}
+/*styling button*/
+ button
+{
+  background-color:#05C47C;
+  font-family:inherit;
+  font-size:18px;
+  display:block;
+  width:100%;
+  border:1px solid #777;
+  margin-top:30px;
+  cursor:pointer;
+ }
